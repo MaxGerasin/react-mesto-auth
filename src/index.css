@@ -10,6 +10,10 @@
 @import url(./blocks/header/header.css);
 @import url(./blocks/header/__logo-link/header__logo-link.css);
 @import url(./blocks/header/__logo/header__logo.css);
+@import url(./blocks/header/__email/header__email.css);
+@import url(./blocks/header/__link/header__link.css);
+@import url(./blocks/header/__profile/header__profile.css);
+@import url(./blocks/header/__button-exit/header__button-exit.css);
 
 /* Profile */
 
@@ -45,6 +49,10 @@
 @import url(./blocks/popup/__img/popup__img.css);
 @import url(./blocks/popup/__caption/popup__caption.css);
 @import url(./blocks/popup/popup-picture.css);
+@import url(./blocks/popup/__container/_type/popup__container_type_auth.css);
+@import url(./blocks/popup/__message-notification/popup__message-notification.css);
+@import url(./blocks/popup/__icon-notification/popup__icon-notification.css);
+
 
 @import url(./blocks/popup/__input/popup__input.css);
 @import url(./blocks/popup/__input/_type/popup__input_type_error.css);
@@ -63,5 +71,13 @@
 @import url(./blocks/card/__like-button/card__like-button.css);
 @import url(./blocks/card/__like-counter/card__like-counter.css);
 @import url(./blocks/card/__like-button/_active/card__like-button_active.css);
+
+/* Authorize */
+
+@import url(./blocks/authorize/authorize.css);
+@import url(./blocks/authorize/__heading/authorize__heading.css);
+@import url(./blocks/authorize/__button/authorize__button.css);
+@import url(./blocks/authorize/__link/authorize__link.css);
+@import url(./blocks/authorize/__input/authorize__input.css);
 
 
