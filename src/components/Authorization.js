@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { authorize, register } from '../utils/auth';
 
-function Authorization({ textHeading, textButton, handleLogin, onOpenInfoPopup }) {
+function Authorization({handleEmail, textHeading, textButton, handleLogin, onOpenInfoPopup }) {
   const [formValue, setFormValue] = useState({email: '', password: ''});
   const navigate = useNavigate();
 
@@ -26,6 +26,7 @@ function Authorization({ textHeading, textButton, handleLogin, onOpenInfoPopup }
     authorize(formValue.email, formValue.password)
       .then((data) => {
         localStorage.setItem('token', data.token);
+        handleEmail(formValue.email);
         setFormValue({email: '', password: ''});
         handleLogin(true);
         navigate('/');

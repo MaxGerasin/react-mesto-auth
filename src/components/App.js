@@ -137,6 +137,10 @@ function App() {
     setLoggedIn(isLogin);
   }
 
+  const handleEmail = (email) => {
+    setEmail(email);
+  }
+
   const handleTokenCheck = () => {
     const token = localStorage.getItem('token');
 
@@ -167,7 +171,7 @@ function App() {
 
   useEffect(() => {
     handleTokenCheck();
-  }, [loggedIn]);
+  }, []);
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
@@ -197,6 +201,7 @@ function App() {
         />
         <Route path='/sign-in' element={
             <Authorization
+              handleEmail={handleEmail}
               handleLogin={handleLogin}
               textHeading='Вход'
               textButton='Войти'
